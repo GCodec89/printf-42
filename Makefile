@@ -6,7 +6,7 @@
 #    By: gonolive <gonolive@student.42porto.com>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/05/01 11:14:22 by gonolive          #+#    #+#              #
-#    Updated: 2024/05/03 14:24:46 by gonolive         ###   ########.fr        #
+#    Updated: 2024/05/03 15:30:24 by gonolive         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,7 +19,7 @@ RM 			= rm -rf
 SRCS 		= ft_printf.c ft_printnbr.c ft_printptr.c ft_printstr.c \
 				ft_putchar.c ft_putptrhex.c ft_utoa.c
 
-OBJS 		= $(SRCS.c=.o)
+OBJS 		= $(SRCS:.c=.o)
 
 all: 		$(NAME)
 
@@ -32,6 +32,6 @@ clean:
 fclean: 	clean
 			$(RM) $(NAME)
 
-re: 		fclean $(NAME)
+re: 		fclean all
 
 .PHONY: 	all clean fclean re

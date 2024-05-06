@@ -6,7 +6,7 @@
 /*   By: gonolive <gonolive@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/02 17:43:02 by gonolive          #+#    #+#             */
-/*   Updated: 2024/05/02 17:43:30 by gonolive         ###   ########.fr       */
+/*   Updated: 2024/05/06 15:05:31 by gonolive         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,11 @@ int	ft_printnbr(int nbr)
 	int	result;
 
 	result = 0;
+	if (nbr == -2147483648)
+	{
+		result += write (1, "-2147483648", 11);
+		return (result);
+	}
 	if (nbr < 0)
 	{
 		result += ft_putchar('-');

@@ -6,7 +6,7 @@
 /*   By: gonolive <gonolive@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/02 17:29:36 by gonolive          #+#    #+#             */
-/*   Updated: 2024/05/02 17:30:29 by gonolive         ###   ########.fr       */
+/*   Updated: 2024/05/03 15:38:13 by gonolive         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,8 +31,8 @@ int	ft_printstr(char *str)
 	i = 0;
 	if (str == NULL)
 	{
-		ft_putstr("(nil)");
-		return (5);
+		ft_putstr("(null)");
+		return (6);
 	}
 	while (str[i])
 	{
